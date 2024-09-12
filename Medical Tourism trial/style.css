@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("images/bg.jpg") #030728 no-repeat center;
+    min-height: 100vh;
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav-list-items, .nav-a-tag, .cta {
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: fle;
+    align-items: flex-start;
+    padding: 30px 10%;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list .nav-list-items {
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.nav-list li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-list li a:hover {
+    color: #0089a9;
+}
+
+button {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(14, 86, 104, 0.8);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 40px;
+}
+
+.slider-wrapper {
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 75px 55px;
+}
+
+.card-list .card-item {
+    color: #fff;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item .user-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+
+.card-list .card-item .user-profession {
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+
+.card-list .card-item .message-button {
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2 ease;
+}
+
+.card-list .card-item .message-button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.slider-wrapper .swiper-pagination-bullet {
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wrapper .swiper-slide-button {
+    color: #fff;
+    margin-top: -50;
+    transition: 0.2 ease;
+}
+
+.slider-wrapper .swiper-slide-button:hover {
+    color: #4658ff;
+}
+
+
+.container2{
+    position: relative;
+    width: 1150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  img{
+      width: 100%;
+       
+  }
+   
+  .container .card{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: 0px 15px 25px rgba(0,0,0,.2);
+    background-color: #fff;
+    margin: 20px;
+    overflow: hidden;
+    transition: .5s;
+  }
+   
+  .container .card:hover{
+    filter: blur(0);
+    transform: scale(1.1);
+    opacity: 1;
+  } 
+   
+  .container .card .circle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    clip-path: circle(180px at center 0);
+    text-align: center;
+  }
+   
+   
+  .container .card .content{
+    position: absolute;
+    bottom: 10px;
+    page-break-after: 20px;
+    text-align: center;
+    padding: 20px;
+  }
+   
+  .container .card .content p{
+    color: #666;
+    text-align: justify;
+    font-size: 15px;
+  }
+   
+  .container .card .content a{
+    position: relative;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-top: 20px;
+    text-decoration: none;
+     
+  }
+   
+  .container .card:nth-child(1) .circle,
+  .container .card:nth-child(1) .content a {
+    background-color: #ffaf00;
+  }
+   
+  .container .card:nth-child(2) .circle,
+  .container .card:nth-child(2) .content a {
+    background-color: #da2268;
+  }
+   
+  .container .card:nth-child(3) .circle,
+  .container .card:nth-child(3) .content a {
+    background-color: #bb02ff;
+  }
+
+  .container .card:nth-child(4) .circle,
+  .container .card:nth-child(4) .content a {
+    background-color: #ffaf00;
+  }
+
+  .container .card:nth-child(5) .circle,
+  .container .card:nth-child(5) .content a {
+    background-color: #da2268;
+  }
+
+  .container .card:nth-child(6) .circle,
+  .container .card:nth-child(6) .content a {
+    background-color: #bb02ff;
+  }

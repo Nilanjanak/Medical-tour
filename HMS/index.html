@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #ffffff; /* White text color */
+        }
+        .navbar {
+            background-color: rgba(0, 77, 153, 0.8); /* Semi-transparent blue background */
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000; /* Ensure navbar stays on top */
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #003366; /* Darker blue on hover */
+        }
+        .navbar .login {
+            float: right;
+        }
+        .hamburger {
+            display: none;
+            float: left;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 14px 20px;
+            color: #ffffff;
+        }
+        .navbar .hamburger:hover {
+            color: #dddddd;
+        }
+        .content {
+            padding: 20px;
+            margin-top: 80px; /* Ensure content is below navbar */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Soft shadow effect */
+        }
+        .content h1 {
+            color: #ffffff;
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .content p {
+            color: #ffffff;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .content ul li {
+            margin-bottom: 10px;
+        }
+        .content a {
+            color: #ffffff;
+            text-decoration: underline;
+        }
+        .content a:hover {
+            color: #dddddd;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .footer p {
+            margin: 0;
+        }
+
+        /* Responsive styles */
+        @media screen and (max-width: 768px) {
+            .navbar a:not(:first-child) {display: none;}
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .navbar.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+            .navbar.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar" id="navbar">
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('services')">Services</a>
+        <a href="#" onclick="showPage('contact')">Contact</a>
+        <a href="login.html" class="login">Login</a>
+    </div>
+
+    <div class="content" id="home">
+        <h1>Welcome to Hospital Management System</h1>
+        <p>This is the home page content. You can add more details here.</p>
+    </div>
+
+    <div class="content" id="about" style="display:none;">
+        <h1>About Us</h1>
+        <p>This is the about page content. You can add more details here.</p>
+    </div>
+
+    <div class="content" id="services" style="display:none;">
+        <h1>Our Services</h1>
+        <ul>
+            <li>Medical Consultation</li>
+            <li>Diagnostic Services</li>
+            <li>Surgery</li>
+            <li>Emergency Care</li>
+        </ul>
+    </div>
+
+    <div class="content" id="contact" style="display:none;">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, feel free to contact us through the form below:</p>
+        <form action="#" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("navbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+
+        function showPage(pageId) {
+            var pages = document.getElementsByClassName("content");
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+            document.getElementById(pageId).style.display = "block";
+            toggleMenu(); // Close the menu on mobile after clicking a link
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hospital Management System</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #004d99;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar .login {
+            float: right;
+        }
+        .hamburger {
+            display: none;
+            float: left;
+            font-size: 30px;
+            cursor: pointer;
+            padding: 14px 20px;
+            color: #f2f2f2;
+        }
+        .navbar .hamburger:hover {
+            color: #ddd;
+        }
+        .content {
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .content h1 {
+            color: #004d99;
+        }
+        .content p {
+            color: #333;
+        }
+        @media screen and (max-width: 600px) {
+            .navbar a {
+                display: none;
+            }
+            .navbar a.icon {
+                float: right;
+                display: block;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <span class="hamburger" onclick="toggleMenu()">&#9776;</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="login">Login</a>
+    </div>
+
+    <div class="content">
+        <h1>About Us</h1>
+        <p>Welcome to the About Us page of the Hospital Management System. We aim to provide quality healthcare services and ensure efficient management of hospital operations.</p>
+        <p>Our team consists of dedicated healthcare professionals, administrators, and support staff committed to delivering exceptional care to our patients and optimizing hospital resources.</p>
+        <p>For any inquiries or feedback, please feel free to <a href="contact.html">contact us</a>.</p>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementsByClassName("navbar")[0];
+            var links = x.getElementsByTagName("a");
+            for (var i = 0; i < links.length; i++) {
+                if (links[i].style.display === "block") {
+                    links[i].style.display = "none";
+                } else {
+                    links[i].style.display = "block";
+                }
+            }
+        }
+    </script>
+
+</body>
+</html>

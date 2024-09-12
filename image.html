@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload and Display</title>
+</head>
+<body>
+    <h2>Upload an Image</h2>
+    <input type="file" id="imageInput" accept="image/*">
+    <br><br>
+    <div>
+        <h3>Image Preview:</h3>
+        <img id="imagePreview" src="" alt="Your image will appear here" style="max-width: 500px; max-height: 500px;">
+    </div>
+
+    <script>
+        document.getElementById('imageInput').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('imagePreview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</body>
+</html>
