@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Bouquets Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Flower Bouquets Store Logo"></a>
+            </div>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <!--Adding the category list to a dropdown menu-->
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Residential</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/single.html">Single-Family Homes</a>
+                            <a href="product-page/multi.html">Multi-Family Homes</a>
+                            <a href="product-page/condos.html">Condominiums(Condos)</a>
+                            <a href="product-page/townhouses.html">Townhouses</a>
+                            <a href="product-page/apartments.html">Apartments</a>
+                            <a href="product-page/vacation.html">Vacation Homes</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Commercial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/office.html">Office Buildings</a>
+                            <a href="product-page/retail.html">Retail Buildings</a>
+                            <a href="product-page/hotel.html">Hotels and Motels</a>
+                            <a href="product-page/shopping.html">Shopping Centers/Malls</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Industrial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/manufacturing.html">Manufacturing Plants</a>
+                            <a href="product-page/distribution.html">Distribution Centers</a>
+                            <a href="product-page/data.html">Data Centers</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Land</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/agricultural.html">Agricultural Land</a>
+                            <a href="product-page/raw.html">Raw Land</a>
+                            <a href="product-page/subdivided.html">Subdivided Land</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Special-Purpose</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">Educational Buildings</a>
+                            <a href="product-page/religious.html">Religious Buildings</a>
+                            <a href="product-page/government.html">Government Buildings</a>
+                            <a href="product-page/medical.html">Medical Facilities</a>
+                            <a href="product-page/recreational.html">Recreational Facilities</a>
+                            <a href="product-page/cemetries.html">Cemeteries</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">By Size</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">2BHK</a>
+                            <a href="product-page/religious.html">3BHK</a>
+                            <a href="product-page/government.html">4BHK</a>
+                            <a href="product-page/medical.html">Bunglow</a>
+                            <a href="product-page/recreational.html">Villa</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="combo.html">Combos</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search for bouquets...">
+                <button type="submit">Search</button>
+            </div>
+
+            <!--Cart button-->
+            <button class="cart-btn">
+                <a href="cart.html"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+                
+                <span id="cart-count">0</span> <!-- This will dynamically show the number of items -->
+            </button>
+
+            <!-- Login button -->
+            <div class="login-btn">
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Image Slider (Product Ads) -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Multiple Slides (Product Ads) -->
+            <div class="slide">
+                <img src="images/slider1.jpg" alt="Slider1">
+                <h2>Slider1</h2>
+            </div>
+            <div class="slide">
+                <img src="images/slider2.jpg" alt="Slider2">
+                <h2>Slider2</h2>
+            </div>
+            <div class="slide">
+                <img src="images/slider3.jpg" alt="Slider3">
+                <h2>Slider3</h2>
+            </div>
+            <!-- Add more slides here -->
+        </div>
+
+        <!-- Navigation for the slider -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+
+    <main>
+        <!-- Category 1: Roses -->
+
+        <section id="category1" class="bouquet-div">
+
+            <h2>Residential Properties</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="product-page/single.html" class="bouquet-card">
+                    <img src="images/single.jpg" alt="Single-Family Homes">
+                    <h3>Single-Family Homes</h3>
+                    <p>Stand-alone houses designed for one family.</p>
+                    <span class="price">$150 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/multi.html" class="bouquet-card">
+                    <img src="images/multi.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3>
+                    <p>Buildings with multiple units, such as duplexes, triplexes, and fourplexes.</p>
+                    <span class="price">$300 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/Condos.html" class="bouquet-card">
+                    <img src="images/Condos.jpg" alt="Condominiums(Condos)">
+                    <h3>Condominiums(Condos)</h3>
+                    <p>Individual units in a building where residents own their unit but share common areas.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/townhouses.html" class="bouquet-card">
+                    <img src="images/townhouses.jpg" alt="Townhouses">
+                    <h3>Townhouses</h3>
+                    <p>Multi-floor homes that share one or two walls with adjacent properties, often found in rows.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+
+                <a href="product-page/residential.html" class="bouquet-card">
+                    <img src="images/residential.jpg" alt="More Residential properties">
+                    <h3>More Residential Properties</h3>
+                    <p>More properties used for living purposes. Residential real estate is the most common form of real estate.</p><br>
+                    <span class="price">>></span><br>
+                </a>
+                <!-- Repeat for more Bouquets -->
+            </div>
+        </section>
+        <section id="category1" class="bouquet-div">
+
+            <h2>Residential Properties</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="product-page/single.html" class="bouquet-card">
+                    <img src="images/single.jpg" alt="Single-Family Homes">
+                    <h3>Single-Family Homes</h3>
+                    <p>Stand-alone houses designed for one family.</p>
+                    <span class="price">$150 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/multi.html" class="bouquet-card">
+                    <img src="images/multi.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3>
+                    <p>Buildings with multiple units, such as duplexes, triplexes, and fourplexes.</p>
+                    <span class="price">$300 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/Condos.html" class="bouquet-card">
+                    <img src="images/Condos.jpg" alt="Condominiums(Condos)">
+                    <h3>Condominiums(Condos)</h3>
+                    <p>Individual units in a building where residents own their unit but share common areas.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/townhouses.html" class="bouquet-card">
+                    <img src="images/townhouses.jpg" alt="Townhouses">
+                    <h3>Townhouses</h3>
+                    <p>Multi-floor homes that share one or two walls with adjacent properties, often found in rows.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+
+                <a href="product-page/residential.html" class="bouquet-card">
+                    <img src="images/residential.jpg" alt="More Residential properties">
+                    <h3>More Residential Properties</h3>
+                    <p>More properties used for living purposes. Residential real estate is the most common form of real estate.</p><br>
+                    <span class="price">>></span><br>
+                </a>
+                <!-- Repeat for more Bouquets -->
+            </div>
+        </section>
+        <section id="category1" class="bouquet-div">
+
+            <h2>Residential Properties</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="product-page/single.html" class="bouquet-card">
+                    <img src="images/single.jpg" alt="Single-Family Homes">
+                    <h3>Single-Family Homes</h3>
+                    <p>Stand-alone houses designed for one family.</p>
+                    <span class="price">$150 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/multi.html" class="bouquet-card">
+                    <img src="images/multi.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3>
+                    <p>Buildings with multiple units, such as duplexes, triplexes, and fourplexes.</p>
+                    <span class="price">$300 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/Condos.html" class="bouquet-card">
+                    <img src="images/Condos.jpg" alt="Condominiums(Condos)">
+                    <h3>Condominiums(Condos)</h3>
+                    <p>Individual units in a building where residents own their unit but share common areas.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/townhouses.html" class="bouquet-card">
+                    <img src="images/townhouses.jpg" alt="Townhouses">
+                    <h3>Townhouses</h3>
+                    <p>Multi-floor homes that share one or two walls with adjacent properties, often found in rows.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+
+                <a href="product-page/residential.html" class="bouquet-card">
+                    <img src="images/residential.jpg" alt="More Residential properties">
+                    <h3>More Residential Properties</h3>
+                    <p>More properties used for living purposes. Residential real estate is the most common form of real estate.</p><br>
+                    <span class="price">>></span><br>
+                </a>
+                <!-- Repeat for more Bouquets -->
+            </div>
+        </section>
+        <section id="category1" class="bouquet-div">
+
+            <h2>Residential Properties</h2>
+            <div class="bouquet-grid">
+                <!-- Rose Bouquet Card with Link -->
+                <a href="product-page/single.html" class="bouquet-card">
+                    <img src="images/single.jpg" alt="Single-Family Homes">
+                    <h3>Single-Family Homes</h3>
+                    <p>Stand-alone houses designed for one family.</p>
+                    <span class="price">$150 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/multi.html" class="bouquet-card">
+                    <img src="images/multi.jpg" alt="Multi-Family Homes">
+                    <h3>Multi-Family Homes</h3>
+                    <p>Buildings with multiple units, such as duplexes, triplexes, and fourplexes.</p>
+                    <span class="price">$300 000.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/Condos.html" class="bouquet-card">
+                    <img src="images/Condos.jpg" alt="Condominiums(Condos)">
+                    <h3>Condominiums(Condos)</h3>
+                    <p>Individual units in a building where residents own their unit but share common areas.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+                <a href="product-page/townhouses.html" class="bouquet-card">
+                    <img src="images/townhouses.jpg" alt="Townhouses">
+                    <h3>Townhouses</h3>
+                    <p>Multi-floor homes that share one or two walls with adjacent properties, often found in rows.</p>
+                    <span class="price">$30.00</span><br><br>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </a>
+
+                <a href="product-page/residential.html" class="bouquet-card">
+                    <img src="images/residential.jpg" alt="More Residential properties">
+                    <h3>More Residential Properties</h3>
+                    <p>More properties used for living purposes. Residential real estate is the most common form of real estate.</p><br>
+                    <span class="price">>></span><br>
+                </a>
+                <!-- Repeat for more Bouquets -->
+            </div>
+        </section>
+
+
+        <!-- Repeat for other categories -->
+    </main>
+
+    <!--Footer-->
+
+    <!-- Footer Section in index.html -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="combo.html">Combos</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-terms">
+            <h3>Terms & Policies</h3>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>
+                <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <p>Email: support@flowershop.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Address: 123 Flower Street, Floral City, FL 12345</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Real Estate. All rights reserved.</p>
+    </div>
+</footer>
+
+
+    <!--JavaScript link-->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
