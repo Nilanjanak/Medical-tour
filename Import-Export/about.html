@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Flower Bouquets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Flower Bouquets Store Logo"></a>
+            </div>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <!--Adding the category list to a dropdown menu-->
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Residential</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/single.html">Single-Family Homes</a>
+                            <a href="product-page/multi.html">Multi-Family Homes</a>
+                            <a href="product-page/condos.html">Condominiums(Condos)</a>
+                            <a href="product-page/townhouse.html">Townhouses</a>
+                            <a href="product-page/apartment.html">Apartments</a>
+                            <a href="product-page/vacation.html">Vacation Homes</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Commercial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/office.html">Office Buildings</a>
+                            <a href="product-page/retail.html">Retail Buildings</a>
+                            <a href="product-page/hotel.html">Hotels and Motels</a>
+                            <a href="product-page/shopping.html">Shopping Centers/Malls</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">Industrial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/manufacturing.html">Manufacturing Plants</a>
+                            <a href="product-page/distribution.html">Distribution Centers</a>
+                            <a href="product-page/data.html">Data Centers</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li> -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Land</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/agricultural.html">Agricultural Land</a>
+                            <a href="product-page/raw.html">Raw Land</a>
+                            <a href="product-page/subdivided.html">Subdivided Land</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">Special-Purpose</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">Educational Buildings</a>
+                            <a href="product-page/religious.html">Religious Buildings</a>
+                            <a href="product-page/government.html">Government Buildings</a>
+                            <a href="product-page/medical.html">Medical Facilities</a>
+                            <a href="product-page/recreational.html">Recreational Facilities</a>
+                            <a href="product-page/cemetries.html">Cemeteries</a>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">By Size</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">2BHK</a>
+                            <a href="product-page/religious.html">3BHK</a>
+                            <a href="product-page/government.html">4BHK</a>
+                            <a href="product-page/medical.html">Bunglow</a>
+                            <a href="product-page/recreational.html">Villa</a>
+                        </div>
+                    </li> -->
+                    
+                    <li><a href="combo.html">Combos</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Icon and Search Bar -->
+            <div class="search-container">
+                <span class="search-icon" onclick="toggleSearch()">
+                    <img src="images/search-icon.png" alt="Search Icon" />
+                </span>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <button onclick="performSearch()">Search</button>
+                </div>
+            </div>
+
+            <!--Cart button-->
+            <button class="cart-btn">
+                <a href="cart.html"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+                
+                <span id="cart-count">0</span> <!-- This will dynamically show the number of items -->
+            </button>
+
+            <!-- Login button -->
+            <div class="login-btn">
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="about-section">
+        <h1>About Flower Bouquets</h1>
+        <p>We are a premium online flower shop delivering a wide variety of floral arrangements to your doorsteps.</p>
+    </div>
+
+    <div class="about-content">
+        <div class="content-section">
+            <h2>Our Story</h2>
+            <p>Flower Bouquets was founded in 2010 with the mission of spreading happiness through beautiful flower arrangements. Our goal is to provide fresh, high-quality bouquets that convey emotions and make moments special.</p>
+        </div>
+        
+        <div class="content-section">
+            <h2>Why Choose Us</h2>
+            <ul>
+                <li>Fresh flowers guaranteed</li>
+                <li>Same-day delivery</li>
+                <li>Unique and customizable arrangements</li>
+                <li>Eco-friendly packaging</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Meet Our Team</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="../images/team1.jpg" alt="Team Member 1">
+                    <h3>Jane Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="../images/team2.jpg" alt="Team Member 2">
+                    <h3>Sarah Johnson</h3>
+                    <p>Lead Florist</p>
+                </div>
+                <div class="team-member">
+                    <img src="../images/team3.jpg" alt="Team Member 3">
+                    <h3>Robert James</h3>
+                    <p>Operations Manager</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button id="scrollTopBtn" style="display:none;position:fixed;bottom:30px;right:30px;padding:10px 20px;background-color:#e91e63;color:white;border:none;cursor:pointer;border-radius:5px;">Top</button>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Flower Bouquets. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - Flower Bouquets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Flower Bouquets Store Logo"></a>
+            </div>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <!--Adding the category list to a dropdown menu-->
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Residential</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/single.html">Single-Family Homes</a>
+                            <a href="product-page/multi.html">Multi-Family Homes</a>
+                            <a href="product-page/condos.html">Condominiums(Condos)</a>
+                            <a href="product-page/townhouse.html">Townhouses</a>
+                            <a href="product-page/apartment.html">Apartments</a>
+                            <a href="product-page/vacation.html">Vacation Homes</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Commercial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/office.html">Office Buildings</a>
+                            <a href="product-page/retail.html">Retail Buildings</a>
+                            <a href="product-page/hotel.html">Hotels and Motels</a>
+                            <a href="product-page/shopping.html">Shopping Centers/Malls</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">Industrial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/manufacturing.html">Manufacturing Plants</a>
+                            <a href="product-page/distribution.html">Distribution Centers</a>
+                            <a href="product-page/data.html">Data Centers</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li> -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Land</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/agricultural.html">Agricultural Land</a>
+                            <a href="product-page/raw.html">Raw Land</a>
+                            <a href="product-page/subdivided.html">Subdivided Land</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">Special-Purpose</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">Educational Buildings</a>
+                            <a href="product-page/religious.html">Religious Buildings</a>
+                            <a href="product-page/government.html">Government Buildings</a>
+                            <a href="product-page/medical.html">Medical Facilities</a>
+                            <a href="product-page/recreational.html">Recreational Facilities</a>
+                            <a href="product-page/cemetries.html">Cemeteries</a>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">By Size</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">2BHK</a>
+                            <a href="product-page/religious.html">3BHK</a>
+                            <a href="product-page/government.html">4BHK</a>
+                            <a href="product-page/medical.html">Bunglow</a>
+                            <a href="product-page/recreational.html">Villa</a>
+                        </div>
+                    </li> -->
+                    
+                    <li><a href="combo.html">Combos</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Icon and Search Bar -->
+            <div class="search-container">
+                <span class="search-icon" onclick="toggleSearch()">
+                    <img src="images/search-icon.png" alt="Search Icon" />
+                </span>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <button onclick="performSearch()">Search</button>
+                </div>
+            </div>
+
+            <!--Cart button-->
+            <button class="cart-btn">
+                <a href="cart.html"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+                
+                <span id="cart-count">0</span> <!-- This will dynamically show the number of items -->
+            </button>
+
+            <!-- Login button -->
+            <div class="login-btn">
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="policy-section">
+            <h1>Refund Policy</h1>
+            <p>At Flower Bouquets, we want you to be completely satisfied with your purchase. If for any reason you're not happy, please review the following refund policy.</p>
+            <h2>Eligibility for Refunds</h2>
+            <p>To be eligible for a refund, you must request it within 14 days of your purchase and provide proof of purchase.</p>
+            <h2>Refund Process</h2>
+            <p>Once your return is received and inspected, we will notify you of the approval or rejection of your refund.</p>
+            <h2>Exchanges</h2>
+            <p>If you received a damaged or defective item, we are happy to exchange it for a new one.</p>
+            <h2>Non-Refundable Items</h2>
+            <p>Certain perishable goods such as custom flower arrangements cannot be returned.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include your footer template here -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

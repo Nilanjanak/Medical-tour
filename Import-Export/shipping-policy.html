@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Policy - Flower Bouquets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Flower Bouquets Store Logo"></a>
+            </div>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <!--Adding the category list to a dropdown menu-->
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Residential</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/single.html">Single-Family Homes</a>
+                            <a href="product-page/multi.html">Multi-Family Homes</a>
+                            <a href="product-page/condos.html">Condominiums(Condos)</a>
+                            <a href="product-page/townhouse.html">Townhouses</a>
+                            <a href="product-page/apartment.html">Apartments</a>
+                            <a href="product-page/vacation.html">Vacation Homes</a>
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Commercial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/office.html">Office Buildings</a>
+                            <a href="product-page/retail.html">Retail Buildings</a>
+                            <a href="product-page/hotel.html">Hotels and Motels</a>
+                            <a href="product-page/shopping.html">Shopping Centers/Malls</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">Industrial</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/manufacturing.html">Manufacturing Plants</a>
+                            <a href="product-page/distribution.html">Distribution Centers</a>
+                            <a href="product-page/data.html">Data Centers</a>
+                            <a href="product-page/industrial.html">Industrial Warehouses</a>
+                        </div>
+                    </li> -->
+
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Land</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/agricultural.html">Agricultural Land</a>
+                            <a href="product-page/raw.html">Raw Land</a>
+                            <a href="product-page/subdivided.html">Subdivided Land</a>
+                        </div>
+                    </li>
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">Special-Purpose</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">Educational Buildings</a>
+                            <a href="product-page/religious.html">Religious Buildings</a>
+                            <a href="product-page/government.html">Government Buildings</a>
+                            <a href="product-page/medical.html">Medical Facilities</a>
+                            <a href="product-page/recreational.html">Recreational Facilities</a>
+                            <a href="product-page/cemetries.html">Cemeteries</a>
+                        </div>
+                    </li> -->
+
+                    <!-- <li class="dropdown">
+                        <a href="#" class="dropbtn">By Size</a>
+                        <div class="dropdown-content">
+                            <a href="product-page/educational.html">2BHK</a>
+                            <a href="product-page/religious.html">3BHK</a>
+                            <a href="product-page/government.html">4BHK</a>
+                            <a href="product-page/medical.html">Bunglow</a>
+                            <a href="product-page/recreational.html">Villa</a>
+                        </div>
+                    </li> -->
+                    
+                    <li><a href="combo.html">Combos</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <!-- Search Icon and Search Bar -->
+            <div class="search-container">
+                <span class="search-icon" onclick="toggleSearch()">
+                    <img src="images/search-icon.png" alt="Search Icon" />
+                </span>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <button onclick="performSearch()">Search</button>
+                </div>
+            </div>
+
+            <!--Cart button-->
+            <button class="cart-btn">
+                <a href="cart.html"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+                
+                <span id="cart-count">0</span> <!-- This will dynamically show the number of items -->
+            </button>
+
+            <!-- Login button -->
+            <div class="login-btn">
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="policy-section">
+            <h1>Shipping Policy</h1>
+            <p>Flower Bouquets offers fast and reliable shipping to ensure that your flowers arrive fresh and on time. Please review our shipping policy for more details.</p>
+            <h2>Shipping Methods</h2>
+            <p>We offer standard and expedited shipping options at checkout. Delivery times may vary depending on your location.</p>
+            <h2>Shipping Fees</h2>
+            <p>Shipping fees are calculated based on your location and the size of your order. These fees will be displayed at checkout.</p>
+            <h2>Order Processing</h2>
+            <p>All orders are processed within 1-2 business days. Orders placed over the weekend or on holidays will be processed the next business day.</p>
+            <h2>International Shipping</h2>
+            <p>We currently only ship to addresses within the United States. We do not offer international shipping at this time.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include your footer template here -->
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

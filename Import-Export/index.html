@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" alt="Flower Bouquets Store Logo"></a>
+            </div>
+
+            <!-- Navigation links -->
+                <nav class="navbar">
+                    <ul class="nav-container">
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Import</a>
+                            <ul class="sub-dropdown">
+                                <li class="sub-dropbtn">Electronics
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Mobile Phones</a></li>
+                                        <li><a href="#">Laptops</a></li>
+                                        <li><a href="#">Cameras</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-dropbtn">Fashion
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Men's Wear</a></li>
+                                        <li><a href="#">Women's Wear</a></li>
+                                        <li><a href="#">Accessories</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-dropbtn">Automobile
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Tyre</a></li>
+                                        <li><a href="#">Parts</a></li>
+                                        <li><a href="#">Oil</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sub-dropbtn">Construction
+                                    <ul class="sub-menu">
+                                        <li><a href="#">Timber</a></li>
+                                        <li><a href="#">Tiles</a></li>
+                                        <li><a href="#">Doors</a></li>
+                                        <li><a href="#">Fireproof material</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Export</a></li>
+                    </ul>
+                </nav>
+            
+
+            <!-- Search Icon and Search Bar -->
+            <!-- <div class="search-container">
+                <span class="search-icon" onclick="toggleSearch()">
+                    <img src="images/search-icon.png" alt="Search Icon" />
+                </span>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search..." id="searchInput">
+                    <button onclick="performSearch()">Search</button>
+                </div>
+            </div> -->
+
+            <!--Cart button-->
+            <button class="cart-btn">
+                <a href="cart.html"><img src="images/cart-icon.png" alt="Cart Icon"></a>
+                
+                <span id="cart-count">0</span> <!-- This will dynamically show the number of items -->
+            </button>
+
+            <!-- Login button -->
+            <div class="login-btn">
+                <a href="login.html">Login/SignUp</a>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Image Slider (Product Ads) -->
+    <div class="slider">
+        <div class="slides">
+            <!-- Multiple Slides (Product Ads) -->
+            <div class="slide">
+                <img src="images/slider1.jpg" alt="Slider1">
+                <h2>Slider1</h2>
+            </div>
+            <div class="slide">
+                <img src="images/slider2.jpg" alt="Slider2">
+                <h2>Slider2</h2>
+            </div>
+            <div class="slide">
+                <img src="images/slider3.jpg" alt="Slider3">
+                <h2>Slider3</h2>
+            </div>
+            <!-- Add more slides here -->
+        </div>
+
+        <!-- Navigation for the slider -->
+        <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+        <a class="next" onclick="moveSlide(1)">&#10095;</a>
+    </div>
+
+    <main>
+
+
+
+
+        
+
+
+
+        <!-- Category 1: Roses -->
+
+
+
+
+        <section class="centered-search">
+            <div class="search-container1">
+                <select class="search-category">
+                    <option value="all">All Categories</option>
+                    <option value="roses">Electronics</option>
+                    <option value="lilies">Fashion</option>
+                    <option value="tulips">Home & Kitchen</option>
+                    <option value="mixed">Industrial</option>
+                    <option value="gifts">Sports & Entertainment</option>
+                </select>
+                <input type="text" placeholder="Search for bouquets..." class="search-input">
+                <button class="search-btn">Search 🔍</button>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- Cards Section -->
+    <section class="cards">
+        <div class="card" onclick="scrollToSection('#section1')">
+            <h3>Millions of business offerings</h3>
+            <p>Explore products and suppliers for your business from millions of offerings worldwide.</p>
+        </div>
+        <div class="card" onclick="scrollToSection('#section2')">
+            <h3>Assured quality and transactions</h3>
+            <p>Ensure production quality from verified suppliers, with your orders protected from payment to delivery.</p>
+        </div>
+        <div class="card" onclick="scrollToSection('#section3')">
+            <h3>Home & Kitchen</h3>
+            <p>Discover quality items for your home and kitchen.</p>
+        </div>
+    </section>
+
+    <!-- Target Sections -->
+    <section id="section1">
+        <div class="icon-container">
+            <div class="icon" onclick="redirectTo('page1.html')">
+              <spam class="icon-image">🏠</spam>
+              <p>Home</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page2.html')">
+              <spam class="icon-image">📧</spam>
+              <p>Contact</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page3.html')">
+              <spam class="icon-image">💼</spam>
+              <p>Portfolio</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page4.html')">
+              <spam class="icon-image">🛒</spam>
+              <p>Shop</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page5.html')">
+              <spam class="icon-image">📖</spam>
+              <p>Blog</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page6.html')">
+              <spam class="icon-image">📅</spam>
+              <p>Events</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page7.html')">
+              <spam class="icon-image">🎨</spam>
+              <p>Gallery</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page8.html')">
+              <spam class="icon-image">📜</spam>
+              <p>About</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page9.html')">
+              <spam class="icon-image">📈</spam>
+              <p>Stats</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page10.html')">
+              <spam class="icon-image">⚙️</spam>
+              <p>Settings</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page12.html')">
+              <spam class="icon-image">🎥</spam>
+              <p>Videos</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page13.html')">
+              <spam class="icon-image">📺</spam>
+              <p>TV</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page14.html')">
+              <spam class="icon-image">🏆</spam>
+              <p>Awards</p>
+            </div>
+            <div class="icon" onclick="redirectTo('page15.html')">
+              <spam class="icon-image">🎤</spam>
+              <p>Podcast</p>
+            </div>
+            </div>
+    </section>
+
+    <section id="section2">
+        <div class="container-1">
+            <h1>Trade with confidence from production quality to purchase protection</h1>
+            
+            <div class="card-1">
+                <h2>Ensure production quality with <span class="highlight">Verified Supplier</span></h2>
+                <p>Connect with a variety of suppliers with third-party-verified credentials and capabilities. Look for the "Verified" logo to begin sourcing with experienced suppliers your business could rely on.</p>
+                <button class="watch-video">Watch video</button>
+                <a href="#" class="learn-more">Learn more</a>
+            </div>
+            
+            <div class="card-1">
+                <h2>Protect your purchase with <span class="highlight">Trade Assurance</span></h2>
+                <p>Source confidently with access to secure payment options, protection against product or shipping issues, and mediation support for any purchase-related concerns when you order and pay on Alibaba.com.</p>
+                <button class="watch-video">Watch video</button>
+                <a href="#" class="learn-more">Learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <h2>Home & Kitchen</h2>
+        <p>Details about home and kitchen items go here...</p>
+    </section>
+
+
+
+        <!-- Repeat for other categories -->
+    </main>
+
+    <!--Footer-->
+
+    <!-- Footer Section in index.html -->
+    <footer class="site-footer">
+        <div class="logo2">
+            <a href="index.html"><img src="images/logo.png" alt="Flower Bouquets Store Logo"></a>
+        </div>
+    <div class="footer-content">
+        <div class="footer-links">
+            
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/product-page/residential.html">Residential Property</a></li>
+                <li><a href="/product-page/commercial.html">Commercial Property</a></li>
+                <li><a href="/product-page/land.html">Land</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-terms">
+            <h3>Terms & Policies</h3>
+            <ul>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                <li><a href="refund-policy.html">Refund Policy</a></li>
+                <li><a href="shipping-policy.html">Shipping Policy</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-contact">
+            <h3>Contact Us</h3>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWsTNGvmGMnQRNgHHfdHQZllXghnjldXWkJlNxVHBMGSGCqhJsxTWPNJxlMZQpmtRdVLqTLHG">Email: support@flowershop.com</a>
+            <p>Phone: +1 (123) 456-7890</p>
+            <p>Address: 123 Flower Street, Floral City, FL 12345</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>&copy; 2024 Real Estate. All rights reserved.</p>
+    </div>
+    </footer>
+
+
+    <!--JavaScript link-->
+    <script src="script.js"></script>
+
+</body>
+</html>
